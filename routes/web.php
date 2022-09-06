@@ -5,6 +5,7 @@ use App\Http\Controllers\HojeController;
 use App\Http\Controllers\TabController;
 use App\Http\Controllers\PiramiteController;
 use App\Http\Controllers\ConeController;
+use App\Http\Controllers\JogadoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,5 @@ Route::get('/hoje', [HojeController::class, 'teste']);
 Route::get('/tab/{meio?}/{ini?}/{fim?}', [TabController::class, 'tab']);
 Route::get('/piramite/{raio?}/{altura?}/{tipo?}', [PiramiteController::class, 'piramite']);
 Route::get('/cone/{raio?}/{altura?}/{tipo?}', [ConeController::class, 'cone']);
+
+Route::resource('/agenda', jogadoresController::class);

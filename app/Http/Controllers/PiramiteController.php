@@ -45,7 +45,6 @@ class PiramiteController extends Controller
             echo " Volume: $volume<br>";
         }elseif ($tipo =="3"){
             $preco = 344.34 * $latas;
-            echo " __>Cone<br>";
             echo " Raio: $raio<br>";
             echo " Altura: $altura<br>";
             echo " A1: $gerarRaiz<br>";
